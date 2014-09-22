@@ -11,6 +11,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
+//This application uses some deprecated methods. 
+//See UIViewPager for a more modern version of this application
+
 public class GridLayoutActivity extends Activity {
 
 	protected static final String EXTRA_RES_ID = "POS";
@@ -29,14 +32,22 @@ public class GridLayoutActivity extends Activity {
 
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 
+		// Create a new ImageAdapter and set it as the Adapter for this GridView
 		gridview.setAdapter(new ImageAdapter(this, mThumbIdsFlowers));
 
+		// Set an setOnItemClickListener on the GridView
 		gridview.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id) {
+				
+				//Create an Intent to start the ImageViewActivity
 				Intent intent = new Intent(GridLayoutActivity.this,
 						ImageViewActivity.class);
+				
+				// Add the ID of the thumbnail to display as an Intent Extra
 				intent.putExtra(EXTRA_RES_ID, (int) id);
+				
+				// Start the ImageViewActivity
 				startActivity(intent);
 			}
 		});

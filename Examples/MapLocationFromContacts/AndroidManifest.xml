@@ -8,15 +8,15 @@
     </uses-permission>
 
     <uses-sdk
-        android:minSdkVersion="5"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="13"
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher" >
         <activity
             android:name="MapLocationFromContactsActivity"
-            android:label="Map Location From Contacts" >
+            android:label="MapLocationFromContacts" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

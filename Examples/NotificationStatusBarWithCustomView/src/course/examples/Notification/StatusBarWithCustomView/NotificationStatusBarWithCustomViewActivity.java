@@ -23,7 +23,6 @@ public class NotificationStatusBarWithCustomViewActivity extends Activity {
 
 	// Notification Text Elements
 	private final CharSequence tickerText = "This is a Really, Really, Super Long Notification Message!";
-	private final CharSequence contentTitle = "Notification";
 	private final CharSequence contentText = "You've Been Notified!";
 
 	// Notification Action Elements
@@ -32,7 +31,7 @@ public class NotificationStatusBarWithCustomViewActivity extends Activity {
 
 	// Notification Sound and Vibration on Arrival
 	private Uri soundURI = Uri
-			.parse("android.resource://course.examples.Notification.StatusBar/"
+			.parse("android.resource://course.examples.Notification.StatusBarWithCustomView/"
 					+ R.raw.alarm_rooster);
 	private long[] mVibratePattern = { 0, 200, 200, 300 };
 
