@@ -2,7 +2,6 @@ apply plugin: 'android'
 
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
-    compile project(":HelloAndroid")
 }
 
 android {
@@ -31,8 +30,5 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
-
     }
-
-
 }
