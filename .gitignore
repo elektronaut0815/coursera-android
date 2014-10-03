@@ -36,7 +36,8 @@ proguard/
 *.iws
 .idea/
 
-# Gradle - generated files
+# Gradle files
 gradlew
 gradlew.bat
+gradle-wrapper.properties
 gradle-wrapper.jar
